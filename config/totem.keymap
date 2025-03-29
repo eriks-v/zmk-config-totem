@@ -11,6 +11,11 @@
             bindings = <&mo 7>;
             key-positions = <37 36>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+        };
     };
 
     keymap {
@@ -38,7 +43,7 @@
             bindings = <
         &kp EXCL           &kp AT         &kp COLON          &kp EQUAL              &kp HASH     &kp POUND    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
         &kp LEFT_BRACKET   &kp PIPE       &kp LEFT_BRACE     &kp LEFT_PARENTHESIS   &kp STAR     &kp PERCENT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDER
-&trans  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp TILDE    &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET  &kp MINUS
+&trans  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp TILDE    &kp MINUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET  &kp MINUS
                                           &kp DOUBLE_QUOTES  &trans                 &trans       &trans       &trans        &kp NUMBER_0
             >;
         };
@@ -74,7 +79,7 @@
             bindings = <
          &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
-&kp F12  &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &trans      &trans      &kp F11
+&kp F12  &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &kp F11     &kp F12     &kp F11
                                  &trans      &trans      &trans        &trans      &trans      &trans
             >;
         };
