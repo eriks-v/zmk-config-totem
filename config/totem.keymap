@@ -8,7 +8,7 @@
         compatible = "zmk,combos";
 
         bt_combo {
-            bindings = <&mo 7>;
+            bindings = <&mo 5>;
             key-positions = <37 36>;
         };
 
@@ -23,10 +23,10 @@
 
         base {
             bindings = <
-        &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y            &kp U              &kp I        &kp O           &kp P
-        &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D         &mt LEFT_SHIFT F  &kp G        &kp H            &mt RIGHT_SHIFT J  &mt RCTRL K  &mt LEFT_ALT L  &mt RIGHT_WIN SEMI
-&trans  &kp Z           &kp X           &kp C               &lt 2 V           &kp B        &kp N            &lt 2 M            &kp COMMA    &kp DOT         &kp FSLH            &kp BSLH
-                                        &lt 3 SINGLE_QUOTE  &lt 1 SPACE       &lt 8 TAB    &lt 4 BACKSPACE  &lt 5 ENTER        &lt 6 DEL
+        &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y            &kp U                &kp I        &kp O           &kp P
+        &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D         &mt LEFT_SHIFT F  &kp G        &kp H            &mt RIGHT_SHIFT J    &mt RCTRL K  &mt LEFT_ALT L  &mt RIGHT_WIN SEMI
+&trans  &kp Z           &kp X           &kp C               &lt 2 V           &kp B        &kp N            &lt 2 M              &kp COMMA    &kp DOT         &kp FSLH            &kp BSLH
+                                        &lt 3 SINGLE_QUOTE  &lt 1 SPACE       &lt 4 TAB    &lt 4 BACKSPACE  &mt RIGHT_ALT ENTER  &kp DELETE
             >;
         };
 
@@ -57,30 +57,12 @@
             >;
         };
 
-        control_num {
+        f_num {
             bindings = <
-             &kp RC(F1)  &kp LC(F2)  &kp LC(F3)   &kp LC(F4)   &kp LC(F5)    &kp LC(F6)  &kp LC(F7)  &kp LC(F8)  &kp LC(F9)  &kp LC(F10)
-             &kp LC(N1)  &kp LC(N2)  &kp LC(N3)   &kp LC(N4)   &kp LC(N5)    &kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)
-&kp LC(F12)  &trans      &trans      &kp LC(F11)  &kp LC(F12)  &trans        &trans      &trans      &trans      &trans      &trans       &kp LC(F11)
-                                     &trans       &trans       &trans        &trans      &trans      &trans
-            >;
-        };
-
-        alt_num {
-            bindings = <
-             &kp LA(F1)  &kp LA(F2)  &kp LA(F3)   &kp LA(F4)   &kp LA(F5)    &kp LA(F6)  &kp LA(F7)  &kp LA(F8)  &kp LA(F9)  &kp LA(F10)
-             &kp LA(N1)  &kp LA(N2)  &kp LA(N3)   &kp LA(N4)   &kp LA(N5)    &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)
-&kp LA(F12)  &trans      &trans      &kp LA(F11)  &kp LA(F12)  &trans        &trans      &trans      &trans      &trans      &trans       &kp LA(F11)
-                                     &trans       &trans       &trans        &trans      &trans      &trans
-            >;
-        };
-
-        win_num {
-            bindings = <
-        &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
-        &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
-&trans  &trans      &trans      &kp F11     &kp F12     &trans        &trans      &trans      &trans      &trans      &trans      &trans
-                                &trans      &trans      &trans        &trans      &trans      &trans
+        &kp F1           &kp F2           &kp F3        &kp F4             &kp F5    &kp F6        &kp F7             &kp F8        &kp F9           &kp F10
+        &mt LEFT_WIN N1  &mt LEFT_ALT N2  &mt LCTRL N3  &mt LEFT_SHIFT N4  &kp N5    &kp NUMBER_6  &mt LEFT_SHIFT N7  &mt LCTRL N8  &mt LEFT_ALT N9  &mt LEFT_GUI N0
+&trans  &trans           &trans           &kp F11       &kp F12            &trans    &trans        &trans             &trans        &trans           &trans           &trans
+                                          &trans        &trans             &trans    &trans        &trans             &trans
             >;
         };
 
@@ -90,15 +72,6 @@
         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR    &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans    &trans  &trans  &trans
-            >;
-        };
-
-        shift_layer {
-            bindings = <
-             &kp LS(F1)  &kp LS(F2)  &kp LS(F3)   &kp LS(F4)   &kp LS(F5)    &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &kp LS(F9)  &kp LS(F10)
-             &kp LS(N1)  &kp LS(N2)  &kp LS(N3)   &kp LS(N4)   &kp LS(N5)    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-&kp LS(F12)  &trans      &trans      &kp LS(F11)  &kp LS(F12)  &trans        &trans      &trans      &trans      &trans      &trans       &kp LS(F11)
-                                     &trans       &trans       &trans        &trans      &trans      &trans
             >;
         };
     };
