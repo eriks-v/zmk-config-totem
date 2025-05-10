@@ -11,12 +11,17 @@
 
         bt_combo {
             bindings = <&mo 5>;
-            key-positions = <37 36>;
+            key-positions = <32 33>;
         };
 
         capsword {
             bindings = <&caps_word>;
             key-positions = <13 16>;
+        };
+
+        f24_for_acejump {
+            bindings = <&kp F24>;
+            key-positions = <35 34>;
         };
     };
 
@@ -34,10 +39,10 @@
 
         nav {
             bindings = <
-        &trans        &trans        &kp GRAVE         &kp ESCAPE      &trans    &trans    &trans    &trans    &kp PAGE_UP  &trans
-        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp HOME  &kp LEFT  &kp UP    &kp RIGHT    &kp END
-&trans  &trans        &trans        &trans            &trans          &trans    &trans    &trans    &kp DOWN  &kp PG_DN    &trans   &trans
-                                    &trans            &trans          &trans    &trans    &trans    &kp INS
+        &trans        &trans        &kp GRAVE         &kp ESCAPE      &trans    &trans    &kp PAGE_UP    &trans    &kp PAGE_UP  &trans
+        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp HOME  &kp LEFT       &kp UP    &kp RIGHT    &kp END
+&trans  &trans        &trans        &kp GRAVE         &kp ESCAPE      &trans    &trans    &kp PAGE_DOWN  &kp DOWN  &kp PG_DN    &trans   &trans
+                                    &trans            &trans          &trans    &trans    &trans         &kp INS
             >;
         };
 
@@ -52,10 +57,10 @@
 
         mouse {
             bindings = <
-        &trans  &trans  &trans          &trans           &trans    &trans  &trans          &trans          &msc SCRL_UP     &trans
-        &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans          &trans           &trans    &trans  &trans          &mmv MOVE_DOWN  &msc SCRL_DOWN   &trans  &trans
-                        &trans          &trans           &trans    &trans  &mkp LCLK       &mkp RCLK
+        &trans        &trans        &trans            &trans           &trans    &trans  &msc SCRL_UP    &trans          &msc SCRL_UP     &trans
+        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT   &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans        &trans        &msc SCRL_LEFT    &msc SCRL_RIGHT  &trans    &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &msc SCRL_DOWN   &trans  &trans
+                                    &trans            &trans           &trans    &trans  &mkp LCLK       &mkp RCLK
             >;
         };
 
